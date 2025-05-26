@@ -87,6 +87,44 @@ nav ul li a:hover {
   font-weight: bold;
   transition: transform 0.3s ease;
 }
+.add-to-cart {
+  background-color: var(--verde);
+  color: white;
+  padding: 0.7rem 1.3rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(76, 175, 80, 0.3);
+  transition: all 0.3s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-agregar:hover {
+  background-color: #43a047;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(76, 175, 80, 0.4);
+}
+
+.btn-agregar:active {
+  transform: scale(0.95);
+}
+
+.btn-agregar i {
+  font-size: 1.2rem;
+}
+
+/* Responsive botón */
+@media (max-width: 480px) {
+  .btn-agregar {
+    width: 100%;
+    justify-content: center;
+    font-size: 1.1rem;
+  }
+}
 
 .btn:hover {
   transform: scale(1.1);
