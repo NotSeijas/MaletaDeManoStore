@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mochila de Mano</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a2f20d2c1f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="hero">
+      <nav>
+        <img
+          src="https://res.cloudinary.com/dt0f3rrdh/image/upload/v1748294736/WhatsApp_Image_2025-05-16_at_22.28.13_eqhl0z.jpg"
+          alt="Logo Mochila de Mano"
+          class="logo"
+        />
+        <div class="menu-toggle" id="menu-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <ul id="nav-links">
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+          <li>
+            <a href="#carrito"
+              ><i class="fas fa-shopping-cart"></i> Carrito (<span
+                id="cart-count"
+                >0</span
+              >)</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Mochila de Mano</h1>
+        <p>Todo lo que necesitas para sentirte mejor, en un solo lugar.</p>
+        <a href="#productos" class="btn">Ver Productos</a>
+      </div>
+    </header>
+
+    <section id="productos" class="productos">
+      <h2>Productos Destacados</h2>
+      <div class="grid">
+        <div
+          class="card"
+          data-id="1"
+          data-nombre="Vinagre de manzana en gomitas"
+          data-precio="150"
+        >
+          <img
+            src="https://m.media-amazon.com/images/I/71MJoc74EoL._AC_SL1500_.jpg"
+            alt="Vinagre de manzana"
+          />
+          <h3>Vinagre de manzana en gomitas</h3>
+          <p>Refuerza tu digestión y mejora tu energía.</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div
+          class="card"
+          data-id="2"
+          data-nombre="Centrum Women +50"
+          data-precio="120"
+        >
+          <img
+            src="https://imagedelivery.net/4fYuQyy-r8_rpBpcY7lH_A/falabellaPE/138164315_01/w=1500,h=1500,fit=pad"
+            alt="Centrum Women +50"
+          />
+          <h3>Centrum Women +50</h3>
+          <p>Complejo vitamínico para mujeres mayores de 50 años.</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div
+          class="card"
+          data-id="3"
+          data-nombre="Triple Omega 3-6-9"
+          data-precio="150"
+        >
+          <img
+            src="https://www.beautystoreperu.com/cdn/shop/files/Nature-Made-Triple-Omega-369-Softgels-Dietary-Supplement-170-Count_ec3bb82e-2a17-497f-831d-7dcaa8cde014.c0e3fd9b2d0e9d0f91b1f3c70e78eb1a.webp?v=1712873890"
+            alt="Omega 3-6-9"
+          />
+          <h3>Triple Omega 3-6-9</h3>
+          <p>Ácidos grasos esenciales para el corazón y el cerebro.</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div
+          class="card"
+          data-id="4"
+          data-nombre="Multivitamínico diario"
+          data-precio="130"
+        >
+          <img
+            src="https://cloudinary.images-iherb.com/image/upload/f_auto,q_auto:eco/images/kim/kim02519/y/8.jpg"
+            alt="Multivitamínico diario"
+          />
+          <h3>Multivitamínico diario</h3>
+          <p>Vitaminas y minerales esenciales para cada día.</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+        <div
+          class="card"
+          data-id="5"
+          data-nombre="Colágeno hidrolizado"
+          data-precio="100"
+        >
+          <img
+            src="https://organix.pe/cdn/shop/products/WEB1-POTE-500GR---Colageno-Hidrolizado--for--Men.jpg?v=1739150517"
+            alt="Colágeno"
+          />
+          <h3>Colágeno hidrolizado</h3>
+          <p>Mejora tu piel, cabello y articulaciones.</p>
+          <button class="add-to-cart">Agregar al carrito</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="carrito" class="carrito">
+      <h2>Carrito de Compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total">Total: S/. 0.00</p>
+      <div class="whatsapp-msg">
+        <i class="fab fa-whatsapp"></i>
+        <p id="mensaje-whatsapp">Tu carrito está vacío</p>
+        <a
+          id="whatsapp-button"
+          href="https://wa.me/1234567890"
+          target="_blank"
+          class="btn"
+        >
+          Enviar por WhatsApp
+        </a>
+      </div>
+    </section>
+    <section id="contacto" class="contacto">
+      <h2>Contacto</h2>
+      <p>¿Tienes dudas o necesitas ayuda? ¡Contáctanos!</p>
+      <div class="contact-links">
+        <a
+          href="mailto:contacto@mochilademano.com"
+          class="contact-icon"
+          target="_blank"
+        >
+          <i class="fas fa-envelope"></i> Correo
+        </a>
+        <a href="https://wa.me/1234567890" class="contact-icon" target="_blank">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a
+          href="https://instagram.com/mochilademano"
+          class="contact-icon"
+          target="_blank"
+        >
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Mochila de Mano - Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+      const stock = {
+        1: 5,
+        2: 5,
+        3: 5,
+        4: 5,
+        5: 5,
+      };
+
+      const cart = {};
+
+      document.querySelectorAll(".add-to-cart").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const card = btn.closest(".card");
+          const id = card.dataset.id;
+          const nombre = card.dataset.nombre;
+          const precio = parseFloat(card.dataset.precio);
+
+          if (!cart[id]) {
+            cart[id] = { nombre, precio, cantidad: 0 };
+          }
+
+          if (cart[id].cantidad < stock[id]) {
+            cart[id].cantidad++;
+            updateCart();
+          } else {
+            alert(`Stock máximo alcanzado para "${nombre}"`);
+          }
+        });
+      });
+
+      function updateCart() {
+        const lista = document.getElementById("lista-carrito");
+        const totalEl = document.getElementById("total");
+        const countEl = document.getElementById("cart-count");
+        const whatsappBtn = document.getElementById("whatsapp-button");
+        const mensajeEl = document.getElementById("mensaje-whatsapp");
+
+        lista.innerHTML = "";
+        let total = 0;
+        let count = 0;
+        let mensaje = "¡Hola! Quiero pedir lo siguiente:\n";
+
+        Object.entries(cart).forEach(([id, item]) => {
+          if (item.cantidad > 0) {
+            const subtotal = item.precio * item.cantidad;
+
+            const li = document.createElement("li");
+            li.innerHTML = `
+          ${item.nombre} x${item.cantidad} - S/ ${subtotal.toFixed(2)}
+          <button class="remove-btn" data-id="${id}" style="margin-left: 10px; background: #ff4d4d; color: white; border: none; border-radius: 5px; padding: 2px 8px; cursor: pointer;">−</button>
+        `;
+
+            lista.appendChild(li);
+            total += subtotal;
+            count += item.cantidad;
+            mensaje += `• ${item.nombre} x${
+              item.cantidad
+            } - S/ ${subtotal.toFixed(2)}\n`;
+          }
+        });
+
+        mensaje += `Total: S/ ${total.toFixed(2)}`;
+
+        totalEl.textContent = `Total: S/. ${total.toFixed(2)}`;
+        countEl.textContent = count;
+        mensajeEl.textContent = count > 0 ? mensaje : "Tu carrito está vacío";
+        whatsappBtn.href = `https://wa.me/1234567890?text=${encodeURIComponent(
+          mensaje
+        )}`;
+
+        // Botones para disminuir cantidad
+        document.querySelectorAll(".remove-btn").forEach((btn) => {
+          btn.addEventListener("click", () => {
+            const id = btn.dataset.id;
+            if (cart[id].cantidad > 1) {
+              cart[id].cantidad--;
+            } else {
+              delete cart[id];
+            }
+            updateCart();
+          });
+        });
+
+        // Mostrar u ocultar botón "Vaciar carrito"
+        const vaciarBtn = document.getElementById("vaciar-carrito");
+        if (vaciarBtn) {
+          vaciarBtn.style.display = count > 0 ? "inline-block" : "none";
+        }
+      }
+
+      // Botón "Vaciar carrito"
+      document.addEventListener("DOMContentLoaded", () => {
+        const section = document.querySelector(".carrito");
+        const btn = document.createElement("button");
+        btn.id = "vaciar-carrito";
+        btn.textContent = "Vaciar Carrito";
+        btn.style =
+          "margin-top: 10px; background: #444; color: white; border: none; border-radius: 5px; padding: 8px 12px; cursor: pointer; display: none;";
+        section.appendChild(btn);
+
+        btn.addEventListener("click", () => {
+          for (const id in cart) {
+            delete cart[id];
+          }
+          updateCart();
+        });
+      });
+
+      // Menú hamburguesa
+      document.getElementById("menu-toggle").addEventListener("click", () => {
+        document.getElementById("nav-links").classList.toggle("active");
+      });
+
+      // Animación de aparición para productos
+      const cards = document.querySelectorAll(".card");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+            }
+          });
+        },
+        { threshold: 0.2 }
+      );
+
+      cards.forEach((card) => observer.observe(card));
+    </script>
+  </body>
+</html>
